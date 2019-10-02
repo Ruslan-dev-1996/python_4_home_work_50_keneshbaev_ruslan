@@ -11,7 +11,7 @@
         <a href="{% url 'article_view' comment.article.pk %}" style="text-decoration: none; font-size: 30px">{{ comment.article }}</a>
         <p>{{ comment.text }}</p>
         <p>{{ comment.author }}</p>
-        <<a href="{% url 'comment_update' comment.pk %}">Edit</a>
+        <a href="{% url 'comment_update' comment.pk %}">Edit</a>
         <a href="{% url "comment_delete" comment.pk %}">Delete</a>
         <hr/>
     {% endfor %}

@@ -97,7 +97,7 @@ class CommentCreateView(View):
             return render(request, 'comment/create.html', context={'form': form})
 
 class CommentView(TemplateView):
-    template_name = 'comment/comment_view.html'
+    template_name = 'comment/comment.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
